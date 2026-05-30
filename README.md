@@ -1,5 +1,8 @@
 # Cancer-RPCA (Cancer RNA-Protein Correlation Analyzer)
 
+**Note:** This document serves as the initial project proposal. As implementation progresses, the architecture, features, and specific pipeline components may be refined.
+The README will be continuously updated to reflect the current state of the project.
+
 ## Overview
 
 Cancer-RPCA (Cancer RNA-Protein Correlation Analyzer) is a Python-based bioinformatics tool designed to investigate the relationship between mRNA abundance and protein abundance across human cancers.
