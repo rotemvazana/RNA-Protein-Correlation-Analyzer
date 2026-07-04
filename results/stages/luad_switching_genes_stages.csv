@@ -1,0 +1,6 @@
+gene,early_r,late_r,delta_r,early_stage,late_stage,abs_delta,direction
+TMEM14C,-0.2278,0.6976,0.9254,I,III,0.9254,Higher in Stage III
+MTMR11,-0.1007,0.7324,0.8331000000000001,I,III,0.8331000000000001,Higher in Stage III
+PHF14,0.5535,-0.3941,-0.9476,I,III,0.9476,Lower in Stage III
+CRAMP1,0.4485,-0.5777,-1.0262,I,III,1.0262,Lower in Stage III
+NUDT7,0.5183,-0.5394,-1.0577,I,III,1.0577,Lower in Stage III

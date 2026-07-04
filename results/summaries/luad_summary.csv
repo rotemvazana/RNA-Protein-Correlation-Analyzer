@@ -1,0 +1,2 @@
+label,n_genes,mean_r,median_r,std_r,pct_positive,pct_high
+luad,12078,0.3845,0.4072,0.2706,91.3,36.8

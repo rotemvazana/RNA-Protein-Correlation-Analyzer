@@ -1,0 +1,3 @@
+label,n_genes,mean_r,median_r,std_r,pct_positive,pct_high
+luad_tumor,11872,0.432,0.4552,0.2325,95.8,42.5
+luad_normal,11801,0.4274,0.4504,0.2315,95.7,42.1

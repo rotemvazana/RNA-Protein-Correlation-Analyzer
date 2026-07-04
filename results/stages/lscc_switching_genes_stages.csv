@@ -1,0 +1,6 @@
+gene,early_r,late_r,delta_r,early_stage,late_stage,abs_delta,direction
+FZD10,-0.6902,0.6909,1.3811,I,III,1.3811,Higher in Stage III
+CASC1,-0.6226,0.4594,1.082,I,III,1.082,Higher in Stage III
+PTOV1,0.4883,-0.5545,-1.0428,I,III,1.0428,Lower in Stage III
+C2orf68,0.7883,-0.2767,-1.065,I,III,1.065,Lower in Stage III
+ESPL1,0.7379,-0.5515,-1.2894,I,III,1.2894,Lower in Stage III

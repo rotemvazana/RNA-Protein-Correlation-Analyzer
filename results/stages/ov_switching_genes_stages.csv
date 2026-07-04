@@ -1,0 +1,6 @@
+gene,early_r,late_r,delta_r,early_stage,late_stage,abs_delta,direction
+CCDC93,-0.2001,0.8071,1.0072,III,IV,1.0072,Higher in Stage IV
+IGHV3-13,-0.0212,0.9255,0.9467,III,IV,0.9467,Higher in Stage IV
+PLEKHM1,0.255,-0.7,-0.955,III,IV,0.955,Lower in Stage IV
+CCDC12,0.4461,-0.6,-1.0461,III,IV,1.0461,Lower in Stage IV
+C4orf3,0.3738,-0.7133,-1.0871,III,IV,1.0871,Lower in Stage IV

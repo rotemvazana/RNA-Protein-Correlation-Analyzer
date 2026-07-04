@@ -1,0 +1,4 @@
+label,n_genes,mean_r,median_r,std_r,pct_positive,pct_high
+luad_stageI,11427,0.4375,0.466,0.2375,95.3,44.6
+luad_stageII,10771,0.4163,0.4445,0.2552,93.2,41.3
+luad_stageIII,10345,0.4638,0.5044,0.2789,93.2,50.6

@@ -1,0 +1,4 @@
+label,n_genes,mean_r,median_r,std_r,pct_positive,pct_high
+hnscc_stageII,9703,0.446,0.4829,0.2937,91.9,48.0
+hnscc_stageIII,9974,0.4074,0.4325,0.2882,90.8,41.3
+hnscc_stageIV,10484,0.4525,0.483,0.2679,93.9,47.4

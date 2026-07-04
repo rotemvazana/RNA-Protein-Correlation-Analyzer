@@ -1,0 +1,3 @@
+label,n_genes,mean_r,median_r,std_r,pct_positive,pct_high
+ccrcc_tumor,10610,0.3884,0.3922,0.2563,93.3,35.0
+ccrcc_normal,10498,0.3835,0.3885,0.2619,92.6,34.8

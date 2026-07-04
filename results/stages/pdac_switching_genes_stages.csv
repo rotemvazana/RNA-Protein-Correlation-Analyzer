@@ -1,0 +1,6 @@
+gene,early_r,late_r,delta_r,early_stage,late_stage,abs_delta,direction
+AMOTL2,-0.4788,0.4977,0.9764999999999999,I,III,0.9764999999999999,Higher in Stage III
+ANAPC1,-0.3301,0.6093,0.9394,I,III,0.9394,Higher in Stage III
+GSE1,0.8018,-0.2129,-1.0147,I,III,1.0147,Lower in Stage III
+PYGO2,0.5273,-0.5091,-1.0364,I,III,1.0364,Lower in Stage III
+RNF168,0.7818,-0.3146,-1.0964,I,III,1.0964,Lower in Stage III

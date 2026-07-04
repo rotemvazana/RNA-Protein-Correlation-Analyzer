@@ -1,0 +1,6 @@
+gene,early_r,late_r,delta_r,early_stage,late_stage,abs_delta,direction
+C17orf58,-0.6964,0.3455,1.0419,II,III,1.0419,Higher in Stage III
+P2RX7,-0.1248,0.8364,0.9612,II,III,0.9612,Higher in Stage III
+NOL4,0.2781,-0.7178,-0.9959,II,III,0.9959,Lower in Stage III
+IST1,0.2725,-0.729,-1.0015,II,III,1.0015,Lower in Stage III
+UBE3D,0.572,-0.4545,-1.0265,II,III,1.0265,Lower in Stage III

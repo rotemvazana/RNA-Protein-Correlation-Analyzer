@@ -1,0 +1,6 @@
+gene,early_r,late_r,delta_r,early_stage,late_stage,abs_delta,direction
+CHRD,-0.4909,0.7332,1.2241,II,IV,1.2241,Higher in Stage IV
+HS3ST1,-0.662,0.5306,1.1926,II,IV,1.1926,Higher in Stage IV
+HGF,0.6848,-0.2448,-0.9296,II,IV,0.9296,Lower in Stage IV
+AC118549.1,0.6463,-0.3078,-0.9541,II,IV,0.9541,Lower in Stage IV
+CHST9,0.8818,-0.3212,-1.203,II,IV,1.203,Lower in Stage IV

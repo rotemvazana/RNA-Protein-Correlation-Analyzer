@@ -1,0 +1,6 @@
+gene,early_r,late_r,delta_r,early_stage,late_stage,abs_delta,direction
+STARD5,-0.1188,0.8196,0.9384,I,IV,0.9384,Higher in Stage IV
+TFE3,-0.127,0.8061,0.9331,I,IV,0.9331,Higher in Stage IV
+ESM1,0.8618,-0.1909,-1.0527,I,IV,1.0527,Lower in Stage IV
+DLG1,0.6466,-0.4133,-1.0598999999999998,I,IV,1.0598999999999998,Lower in Stage IV
+MRPL24,0.3764,-0.6853,-1.0617,I,IV,1.0617,Lower in Stage IV

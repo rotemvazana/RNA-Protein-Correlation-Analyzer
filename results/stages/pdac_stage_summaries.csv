@@ -1,0 +1,4 @@
+label,n_genes,mean_r,median_r,std_r,pct_positive,pct_high
+pdac_stageI,8596,0.3087,0.326,0.3194,82.1,30.8
+pdac_stageII,10442,0.2781,0.2728,0.2531,86.5,20.1
+pdac_stageIII,9979,0.3105,0.3161,0.2674,87.3,25.5

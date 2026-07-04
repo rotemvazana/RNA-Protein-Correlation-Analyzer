@@ -1,0 +1,5 @@
+label,n_genes,mean_r,median_r,std_r,pct_positive,pct_high
+ccrcc_stageI,10083,0.3606,0.3686,0.2683,90.3,32.3
+ccrcc_stageII,8206,0.433,0.4788,0.3234,88.8,47.6
+ccrcc_stageIII,9585,0.409,0.4297,0.2862,91.0,41.2
+ccrcc_stageIV,7965,0.4344,0.4825,0.3234,89.1,47.9

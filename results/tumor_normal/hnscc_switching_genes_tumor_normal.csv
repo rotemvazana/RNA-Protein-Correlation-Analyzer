@@ -1,0 +1,6 @@
+gene,tumor_r,normal_r,delta_r,abs_delta,direction
+TCAIM,0.4122,-0.1094,0.5216000000000001,0.5216000000000001,Higher in Tumor
+SCML4,0.3362,-0.103,0.4392,0.4392,Higher in Tumor
+MUS81,0.2869,0.7063,-0.4194,0.4194,Lower in Tumor
+ADCY6,0.4069,0.8424,-0.4355,0.4355,Lower in Tumor
+PLCE1,0.127,0.6364,-0.5094,0.5094,Lower in Tumor
