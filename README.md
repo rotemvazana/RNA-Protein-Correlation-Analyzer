@@ -71,7 +71,7 @@ When normal adjacent tissue (NAT) samples are available:
 **Outputs:**
 
 - Per-gene Spearman correlation tables for tumor samples and normal samples separately (CSV)
-- Delta table showing the change in Spearman r (Δr = tumor_r − normal_r) per gene (CSV)
+- Delta table showing the change in Spearman r (Δr = tumor_r - normal_r) per gene (CSV)
 - Summary table comparing mean and median Spearman r between tumor and normal groups (CSV)
 - Violin plots comparing tumor vs. normal Spearman r distributions
 
@@ -117,6 +117,8 @@ Genes are selected by largest |Δr| rather than highest r, because a gene that g
 - Switching genes table with Δr  for stage progression (CSV)
 - Multi-panel scatter plots for top switching genes - tumor vs. normal (one row per gene, Tumor | Normal columns)
 - Multi-panel scatter plots for top switching genes - stage progression (one row per gene, one column per stage)
+
+Identifying switching genes is biologically meaningful - for example, a gene that loses mRNA-protein coupling specifically in tumor tissue, while maintaining tight coupling in normal tissue, is a strong candidate for post-transcriptional regulation that is activated or dysregulated by cancer. Such genes may be subject to translational repression, altered protein degradation, or microRNA-mediated silencing that operates specifically in the tumor context. The switching genes identified by this tool can therefore serve as a starting point for further investigation: their regulatory mechanisms can be explored through existing databases, and the candidates can be validated in-vitro and/or in-vivo later on.
 
 ---
 
@@ -187,7 +189,7 @@ results/
 ## Program Architecture
 
 ```text
-Data Loader (data.loader.py)
+Data Loader (data_loader.py)
       │
       ▼
 Sample Matching + Gene Filtering
@@ -282,11 +284,14 @@ python main.py --all-cancers --compare-normal
 python main.py --all-cancers --stage-analysis
 ```
  
-**Full pipeline — all analyses:**
+**Full pipeline - all analyses:**
  
 ```bash
 python main.py --all-cancers --compare-normal --stage-analysis --switching-genes
 ```
+
+**Note:** The first run downloads CPTAC data for each cancer type (~15-50 MB per cancer type). This is a one-time download - subsequent runs load data from the local cache and are significantly faster. Running the full pipeline across all 9 cancer types for the first time may take **20-40 minutes** depending on your internet connection and hardware. Subsequent runs typically complete in **5-10 minutes**.
+
  
 **Optional flags:**
  
@@ -315,33 +320,40 @@ pytest tests/
 ## Repository Structure
 
 ```text
-project/
-
+RNA-Protein-Correlation-Analyzer/
+ 
+├── main.py                      ← entry point 
+ 
 ├── src/
-│   ├── data_loader.py
-│   ├── correlation.py
-│   ├── normal_comparison.py
-│   ├── stage_analysis.py
-│   └── visualization.py
-│
+│   ├── __init__.py              ← marks src/ as a Python package
+│   ├── data_loader.py           ← loads and preprocesses CPTAC data
+│   ├── correlation.py           ← Spearman correlation engine
+│   ├── normal_comparison.py     ← tumor vs. normal analysis
+│   ├── stage_analysis.py        ← stage-specific analysis
+│   ├── gene_analysis.py         ← switching genes identification
+│   └── visualization.py         ← all plotting functions
+ 
 ├── results/
+│   ├── correlations/
+│   ├── summaries/
+│   ├── tumor_normal/
+│   └── stages/
+ 
 ├── figures/
+│   ├── correlations/
+│   ├── comparisons/
+│   ├── tumor_normal/
+│   └── stages/
+ 
 ├── tests/
+│   ├── conftest.py
+│   ├── test_correlation.py
+│   ├── test_data_loader.py
+│   └── test_normal_and_stage.py
+ 
 ├── requirements.txt
 └── README.md
 ```
-
----
-
-## Future Extensions
-
-Potential future improvements include:
-
-- Pathway-level correlation analysis
-- Mutation-specific analyses
-- Integration with TCGA datasets
-- Interactive dashboard
-- Functional enrichment analysis of highly discordant genes
 
 ---
 
